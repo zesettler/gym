@@ -1,15 +1,11 @@
-import { useState } from "react"
-import Navbar from "./scenes/navbar/Navbar"
-
-enum SelectedPage {
-  Home = 'home',
-  Benefits = 'benefits',
-  OurClasses = 'ourClasses',
-  ContactUs = 'contactus'
-}
+import { useState } from "react";
+import Navbar from "./scenes/navbar/Navbar";
+import { SelectedPage } from "./shared/types";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(
+    SelectedPage.Home
+  );
 
   return (
     <div className='app bg-gray-20'>
